@@ -1,0 +1,22 @@
+I have 10 task, I need to execute 5 task on all the host which are under the group test in the inventory file and task 6-8 on first 2 servers only and the task 9-10 to the last server only.
+
+
+- hosts: test 
+  tasks: 
+    - task1 
+    - task2 
+    - task3 
+    - task4 
+    - task5 
+
+- hosts: test[0], test[1] 
+  tasks: 
+    - task6 
+    - task7 
+    - task8 
+
+- hosts: test[-1] 
+  tasks: 
+    - task9 
+    - task10 
+
