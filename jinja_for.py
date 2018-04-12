@@ -26,6 +26,8 @@ Your template should be inside your Python program for simplicity.
 It is fine for your VLAN IDs to be out of order in the generated configuration (for example, VLAN
 ID 508 can come before VLAN ID 504).
 
+Template
+
 """
 from __future__ import print_function, unicode_literals
 import jinja2
